@@ -28,6 +28,16 @@ public:
 		predecessor.erase(remove(predecessor.begin(),predecessor.end(),pred_name),predecessor.end());
 	}
 
+	int isFoundPred(string pred_name){
+		for (int i = 0; i < predecessor.size(); i++)
+		{
+			if (pred_name.compare(predecessor.get(i)) == 0)
+			{
+				return i;
+			}
+		}
+	}
+
 	~Node(){
 		successor.clear()
 		predecessor.clear();
@@ -61,7 +71,6 @@ public:
 		this->num_node++;
 		delete[] this->adjacency;
 		this->adjacency = new bool[num_node][num_node];
-		this->initializeAdjacency();
 		
 	}
 
@@ -70,7 +79,6 @@ public:
 		delete[] this->adjacency;
 		this->num_node--;
 		this->adjacency = new bool[num_node][num_node];
-		this->initializeAdjacency();
 	}
 
 	~Graph(){
@@ -79,6 +87,19 @@ public:
 	}
 
 	void renderAdjacency() {
-
+		this->initializeAdjacency();
+		for (int i = 0; i < this->nodes.size(); i++)
+		{
+			for (int j = 0; j < num_node; j++)
+			{
+				if (this->)
+				{
+					/* code */
+				}
+				
+			}
+			
+		}
+		
 	}
 };
