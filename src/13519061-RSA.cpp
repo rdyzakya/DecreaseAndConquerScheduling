@@ -2,6 +2,7 @@
 #include <iostream>
 using namespace std;
 
+//penambahan fitur seperti loading
 void isengStart() {
 	cout << "RSA Preparing Things";
 	for (int i = 0; i < 3; ++i)
