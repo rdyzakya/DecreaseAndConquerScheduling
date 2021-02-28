@@ -1,8 +1,9 @@
-#include "ScannerGraph.hpp"
+#include "13519061-ScannerGraph.hpp"
 
+//membaca file dan mengubahnya menjadi sebuah graf
 Graph ScannerGraph::readTxt(string file_name){
 	Graph my_graph;
-	ifstream file(file_name + ".txt");
+	ifstream file("..\\test\\" + file_name + ".txt");
 	string line;
 	while(getline(file,line)){
 		line.erase(remove(line.begin(),line.end(),' '), line.end());
