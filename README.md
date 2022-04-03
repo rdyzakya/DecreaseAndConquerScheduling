@@ -1,4 +1,4 @@
-# Tugas Kecil 2 Strategi Algoritma
+# Scheduling Algorithm Using Decrease And Conquer
 Randy's Scheduling Algorithm (RSA)
 *{bukan algoritma kriptografi}*
 
